@@ -1,4 +1,4 @@
-# task1 - SoftServe#3 - Lesson3
+# hometask1 - SoftServe#3 - Lesson3
 # Use string to depict the Zen of Python (Python philosophy)
 
 zen_python = '''

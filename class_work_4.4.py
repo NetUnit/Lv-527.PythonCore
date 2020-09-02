@@ -1,7 +1,7 @@
 import numpy as np # https://linuxconfig.org/install-numpy-on-ubuntu-20.04-bionic-beaver-linux - tutorial
 import random
 
-# task4 - SoftServe#4 - Lesson4
+# classwork task4- SoftServe#4 - Lesson4
 
 # 'List comprehension' - 'LC' in further
 

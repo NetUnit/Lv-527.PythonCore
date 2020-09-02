@@ -1,6 +1,6 @@
 import time
 
-# task4 - SoftServe#4 - Lesson4
+# classwork task4 - SoftServe#4 - Lesson4
   
 # creating the list of numbers 
 
@@ -62,6 +62,3 @@ if num_odd:
 	print ('There is an odd number here')
 else:
 	print ('There is only even numbers here')
-
-#OPTIONAL # '1.3.3 odd number checking' is not necessary
-

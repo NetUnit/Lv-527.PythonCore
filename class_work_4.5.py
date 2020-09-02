@@ -1,5 +1,5 @@
 import time
-# task5 - SoftServe#4 - Lesson4
+# classwork task5 - SoftServe#4 - Lesson4
 
 #1.1 Create the list of Fibonacci Numbers using cycle (while, for) up to 13
 

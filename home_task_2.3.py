@@ -1,7 +1,9 @@
 import time
-# task3 - SoftServe#3 - Lesson3
+
+# hometask3 - SoftServe#3 - Lesson3
 
 # task3 - CHANGE A VALUE OF VARIABLE NOT INCLUDING THE 3RD VARIABLE - USING INPUT
+
 #3.1 using input+
 
 variable_1 = 25
@@ -32,14 +34,14 @@ def change2(y):
 
 time.sleep(1)
 
-print (change1('250')) #
+print (change1('250')) 
 print (change2('+100500'))
 
 #OPTIONAL # '3.2' is not necessary
 
 # 3.3 change a value of variable using replace() method
 
-variable_1 = "draft" 
+variable_1 = '25'
 variable_2 = 'Programiz '
 time.sleep(1)
 
@@ -48,8 +50,11 @@ print(variable_2.replace ('r', '\'r\''))
 # reverse replacement
 
 time.sleep(1)
-print('variable_1: - ' + variable_1.replace ('draft', 'Programiz'))
-print('variable_2: - ' + variable_2.replace ('Programiz', 'draft'))
+print ('Now we will put variables in the reverse order: ')
+time.sleep(2)
+
+print('variable_1: - ' + variable_1.replace ('25', 'Programiz'))
+print('variable_2: - ' + variable_2.replace ('Programiz', '25'))
 
 #OPTIONAL # '3.3' is not necessary
 

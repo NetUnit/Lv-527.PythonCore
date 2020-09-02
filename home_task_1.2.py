@@ -1,5 +1,6 @@
-# task SoftServe1
 import time
+
+# hometask2 - SoftServe1 - Lesson1
 
 time.sleep(1)
 print ('We are going to execute some code ')
@@ -9,8 +10,8 @@ print ('...')
 def calculations():
 
 	c = input ( 'Please select the \'a\' variable: ')
-	a = int (c) # we can put except here to catch a ValueError in the case when user not type digi
-	t 
+	a = int (c) # we can put except here to catch a ValueError in the case when user not type digit 
+	
 	d = input ( 'Please select the \'b\' variable: ')
 	b = int (d)
 

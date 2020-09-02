@@ -1,4 +1,5 @@
-# task1 - SoftServe4 - Lesson4
+# classwork task1 - SoftServe4 - Lesson4
+
 # 1.1 # виведе парні цифри від 0 (while)
 
 a = 0 # цикл з основою на додаванні 2ки до стартового числа 0
