@@ -5,7 +5,7 @@ import random
 
 # 'List comprehension' - 'LC' in further
 
-#1.1 Create the list of integers, then change data type of this list to decimal using float
+#1.1 Create the list of integers, then change data type of this list to decimal using float (SHORTEST WAY)
   
 # list of numbers  
 

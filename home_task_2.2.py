@@ -63,19 +63,16 @@ print ("The original number is: " + str(num))
 # using list comprehension to convert number to list of integers 
 
 int_lst = [int(x) for x in str(num)] #we will get the list of integers
-# without list comprhension
-int_lst = 
+  
+print ("The list from number is: " + str(int_lst)) # printing result
 
-# printing result  
-print ("The list from number is: " + str(int_lst)) 
-
-reversed_lst = int_lst.reverse() # reversing int_lst - видає None
+reversed_lst = int_lst.reverse() # reversing int_lst - will return None (asked Liybov Koliasa 27.08 - OK)
 
 print ("The reversed list is: " + str(int_lst))
 
 # using 'sort' method to sort digits
 
-sorted_lst = int_lst.sort() # sort the list in place - - видає None
+sorted_lst = int_lst.sort() # sort the list in place - will return None (asked Liybov Koliasa 27.08 - OK) - will sort all digits in logical order
 
 print ("The sorted list is: " + str(int_lst))
 
