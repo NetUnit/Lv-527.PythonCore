@@ -13,7 +13,8 @@ print ('Your age is: ' + age )
 location = input ( 'What is your location: ')
 print ( "Your location is: " + location ) 
 
-#1.1.1 
+#1.1.2
+#Example#2
 
 time.sleep(1)
 print ('...')
@@ -47,4 +48,4 @@ output = function_location
 output1 = output ( location )
 print ( output1 )
 
-# Example#2
+
