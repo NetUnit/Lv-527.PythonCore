@@ -38,7 +38,7 @@ time.sleep(1)
 
 print( max.__doc__) # docstring info will arise
 
-#3.1 Create a program that will count the surface area of rectangular, traingle or cyrcle figure, according to customer's selection 
+#3.1 Create a program that will count the surface area of a rectangular, a traingle or a circle, according to customer's selection 
 # rectang
 
 def rectang():
