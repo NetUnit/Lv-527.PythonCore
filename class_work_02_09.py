@@ -4,7 +4,7 @@ import time
 
 #classwork2 02.09 - SoftServe#6 - Lesson6
 
-#1.1 #Написати функцію, яка знаходить середнє арифметичне значення довільної кількості чисел.
+#1.1 "Arithmetic mean" function 
 
 def arithmetic(x):
 	arith_lst = [ int(i) for i in str(x) ]
@@ -14,7 +14,7 @@ def arithmetic(x):
 num = int(input ('Type the number: '))
 print ( 'The arithmetic mean of these digits is: ' + str(arithmetic(num)) )
 
-#2.1 Create a fucntion that would create the list of integers, determine 'max' and 'min'. Use !!!DOCSRTRING!!!
+#2.1 Function that creates the list of integers, determine 'max' and 'min'. Use !!!DOCSRTRING!!!
 
 def max(x, y):
 
@@ -38,7 +38,7 @@ time.sleep(1)
 
 print( max.__doc__) # docstring info will arise
 
-#3.1 Create a program that will count the surface area of rectangular, traingle and cyrcle, according to customer's selection 
+#3.1 Create a program that will count the surface area of rectangular, traingle or cyrcle figure, according to customer's selection 
 # rectang
 
 def rectang():
@@ -87,7 +87,7 @@ else:
 	print ('The program is over')
 
 
-#4.1 Написати функцію, яка обчислює кількість символів, які входять в задану стрічку.	
+#4.1 Написати функцію, яка обчислює кількість символів, які входять в задану стрічку
 
 def num_symb (x):
 
