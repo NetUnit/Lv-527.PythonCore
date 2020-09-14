@@ -42,7 +42,7 @@ print( max.__doc__) # docstring info will arise
 # rectang
 
 def rectang():
-	a = int(input (' Enter the side lenght: '))
+	a = int(input (' Enter the side length: '))
 	b = int(input (' Enter the side width: '))
 	s = a * b
 	
