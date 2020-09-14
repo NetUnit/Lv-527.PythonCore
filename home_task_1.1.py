@@ -2,6 +2,8 @@ import time
 
 # hometask1 - SoftServe1 - Lesson1 
 
+#1.1.1 Create a function that outputs: name, age, location
+
 name = input ( 'What is your name?: ')
 print ('Your name is: ' + name ) 
 
@@ -11,7 +13,7 @@ print ('Your age is: ' + age )
 location = input ( 'What is your location: ')
 print ( "Your location is: " + location ) 
 
-# task1 - SoftServe1 - Lesson1 - Example2
+#1.1.1 
 
 time.sleep(1)
 print ('...')
@@ -45,3 +47,4 @@ output = function_location
 output1 = output ( location )
 print ( output1 )
 
+# Example#2

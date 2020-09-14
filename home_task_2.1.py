@@ -1,4 +1,5 @@
 # hometask1 - SoftServe#3 - Lesson3
+
 # Use string to depict the Zen of Python (Python philosophy)
 
 zen_python = '''
@@ -26,7 +27,7 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 '''
 
-#task 1.1 "Find and count in the text above number of words (better, never, is)" - (in order to implement this - use 3 separate variables, not single)
+#2.1.1 "Find and count in the text above number of words (better, never, is)" - (in order to implement this - use 3 separate variables, not single)
 
 count_better = zen_python.count ('better')
 
@@ -44,7 +45,8 @@ upper_zen = zen_python.upper ()
 
 print ( upper_zen )
 
-#task 1.2.1 (as an option we will sum the quantity of all letters in the text, except other symbols). https://www.cyberforum.ru/python-beginners/thread2226706.html #OPTIONAL 
+#task 2.1.2 (as an option we will sum the quantity of all letters in the text, except other symbols). https://www.cyberforum.ru/python-beginners/thread2226706.html #OPTIONAL 
+# Example#2
 
 def extra_count ():
 	symbols = len ( zen_python ) - zen_python.count (' ') - zen_python.count ('.') - zen_python.count ('!') - zen_python.count (',') # number of symbols (letters) 
@@ -53,19 +55,22 @@ def extra_count ():
 	print ( 'The following text contains the next number of letters - ' + str (symbols) + ' and ' + str  ( words ) + ' words' ) 
 extra_count()
 
-#OPTIONAL # 'extra_count ()' is not necessary
 
-# 1.3.1 shift symbols 'i' and '!' with '&' and '_'
+# 2.2.1 shift symbols 'i' to '&'
 
 shift_symbols = zen_python.replace('i', '&')
+
 print ( shift_symbols )
 
-#1.3.2 another option of doing this:      
-count_i = zen_python.count ('i') # will counting the number of 'i' symbols (as in the instruction - https://www.programiz.com/python-programming/methods/string/replace )
-shift_symbols_optional = zen_python.replace('i', '&', count_i ) # using the counted number as a number of shifts 'i' to '&' 
+
+#2.2.2 shift symbols '!' to ' ' (using count() to check a number of shifts):  
+# Example#2
+
+count_i = zen_python.count ('!') # will counting the number of 'i' symbols (as in the instruction - https://www.programiz.com/python-programming/methods/string/replace )
+shift_symbols_optional = zen_python.replace('!', ' ', count_i ) # using the counted number as a number of shifts '!' to ' ' 
 print ( shift_symbols_optional )
 
-#OPTIONAL # 'count_i' is not necessary
+
 
 
 

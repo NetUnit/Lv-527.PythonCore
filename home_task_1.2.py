@@ -1,7 +1,9 @@
 import time
 
-# hometask2 - SoftServe1 - Lesson1
+# hometask2 - SoftServe1 - Lesson1 
 
+#2.1 Basic Arithmetic Operators (using function)
+ 
 time.sleep(1)
 print ('We are going to execute some code ')
 time.sleep(1)
@@ -10,8 +12,8 @@ print ('...')
 def calculations():
 
 	c = input ( 'Please select the \'a\' variable: ')
-	a = int (c) # we can put except here to catch a ValueError in the case when user not type digit 
-	
+	a = int (c) # we can put except here to catch a ValueError in the case when user not type digit
+
 	d = input ( 'Please select the \'b\' variable: ')
 	b = int (d)
 
@@ -26,6 +28,8 @@ def calculations():
 	print ( output )
 
 calculations()
+
+
 
 
 

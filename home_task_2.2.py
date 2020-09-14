@@ -1,5 +1,6 @@
-# hometask2 - SoftServe#3 - Lesson3
-# CREATE A POSITIVE 4-DIGIT INTEGER NUMBER
+#task2 - SoftServe#3 - Lesson3
+
+#CREATE A POSITIVE 4-DIGIT INTEGER NUMBER
 
 #2.1 Commit the multiplication of digits of this number:
 
@@ -19,13 +20,15 @@ print ('Multiplication result: ' + str (multipl) )
 
 print ( int_lst2[3] + int_lst2[2] + int_lst2[1] + int_lst2[0] )
 
+
 # 2.2.2 using minus indexes 
+# Example#2
 
 print ( int_lst2[-1] + int_lst2[-2] + int_lst2[-3] + int_lst2[-4] )
 
-#OPTIONAL # '2.2.2' is not necessary
 
 # 2.2.3 using reverse method
+# Example3
 
 reversed_lst = str_lst.reverse() # optional 3
 
@@ -40,14 +43,14 @@ an_integer = int(a_string)
 
 print ( an_integer  )
 
-#OPTIONAL # '2.2.3' is not necessary
 
 # 2.2.4 The format() method that is available with the string
+# Example4
 
 #reverse_order = "{2}, {1}, {0}, {0} ".format( str_lst ) # doesnt work - INDEX ERROR
 #print ( reverse_order )
+# DOESN'T WORK
 
-#OPTIONAL # '2.2.4' is not necessary
 
 # 2.3 Sort-out the digits which includes this number
 
@@ -63,20 +66,23 @@ print ("The original number is: " + str(num))
 # using list comprehension to convert number to list of integers 
 
 int_lst = [int(x) for x in str(num)] #we will get the list of integers
-  
-print ("The list from number is: " + str(int_lst)) # printing result
+# without list comprhension
 
-reversed_lst = int_lst.reverse() # reversing int_lst - will return None (asked Liybov Koliasa 27.08 - OK)
+# printing result  
+print ("The list from number is: " + str(int_lst)) 
+
+reversed_lst = int_lst.reverse() # reversing int_lst - WILL RETURN None
 
 print ("The reversed list is: " + str(int_lst))
 
 # using 'sort' method to sort digits
 
-sorted_lst = int_lst.sort() # sort the list in place - will return None (asked Liybov Koliasa 27.08 - OK) - will sort all digits in logical order
+sorted_lst = int_lst.sort() # sort the list in ascending order - WILL RETURN None
 
 print ("The sorted list is: " + str(int_lst))
 
 # 2.3.2 Method #2 : Using map() - https://www.geeksforgeeks.org/python-convert-number-to-list-of-integers/
+# Example2
 
 int_lst = list(map(int, str(num))) # to convert number to list of integers
 reverse_lst = int_lst.reverse() 
@@ -84,17 +90,14 @@ print (int_lst ) # printing reversed list of integers
 sort_lst = int_lst.sort() # sorting - https://stackoverflow.com/questions/1301156/how-to-sort-digits-in-a-number
 print (int_lst) # printing the list of integers put in the logic order
 
-#OPTIONAL # '2.3.2' is not necessary
-
 
 # 2.3.3 Method #3 : Sort the digits in ascending and descending orders - https://stackoverflow.com/questions/1301156/how-to-sort-digits-in-a-number
+# Example3
 
 num = 2020 # creating a random number
 ascending = "".join(sorted(str(num)))
 print ( ascending )
 
-
-#OPTIONAL # '2.3.3' is not necessary
 
 
 
