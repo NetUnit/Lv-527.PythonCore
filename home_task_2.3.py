@@ -2,7 +2,7 @@ import time
 
 # task3 - SoftServe#3 - Lesson3
 
-#CHANGE A VALUE OF VARIABLE NOT INCLUDING THE 3RD VARIABLE - USING INPUT
+#CHANGE A VALUE OF VARIABLE NOT INCLUDING THE 3RD VARIABLE
 
 #3.1 Simple replacement  
 
@@ -41,7 +41,7 @@ print (change2('y'))
 
 #ЗМІНА ЗНАЧЕНЬ ЗМІННИХ 
 
-# 3.3 change a value of variable using replace() method (replace leter to a letter in brackets)
+# 3.3 change a value of variable using replace() method (just replace the value)
 # Example3
 
 
@@ -58,7 +58,7 @@ variable_1 = variable_1.replace ('Text1', 'Text2')
 print (variable_1)
 print (variable_2)
 
-#ЗАМІНА ЗНАЧЕНЬ з reverse
+#ЗАМІНА ЗНАЧЕНЬ з replace
 
 
 
