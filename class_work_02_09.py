@@ -4,17 +4,25 @@ import time
 
 #classwork2 02.09 - SoftServe#6 - Lesson6
 
-#1.1 "Arithmetic mean" function 
+#1.1 #Написати функцію, яка знаходить середнє арифметичне значення довільної кількості чисел.
 
-def arithmetic(x):
-	arith_lst = [ int(i) for i in str(x) ]
-	print (type(arith_lst))
-	return sum(arith_lst)/len(arith_lst)
+def arithmetic(*args):
+	arith_lst1 = list ( map (int, num1.split())) 
+	print (arith_lst1, 'List created with map(), through a spaced typing') # map list
+	print (type(arith_lst1))
 
-num = int(input ('Type the number: '))
-print ( 'The arithmetic mean of these digits is: ' + str(arithmetic(num)) )
+	arith_lst2 = [ int(i) for i in str(num2) ]
+	print (arith_lst2, 'List created throgh LC, no spaces, just random typing') # LC list
+	print (type(arith_lst2))
+	
+	return 'map list: ' + str(sum(arith_lst1)/len(arith_lst1)) + ', ' + 'LC list: ' + str(sum(arith_lst2)/len(arith_lst2))
 
-#2.1 Function that creates the list of integers, determine 'max' and 'min'. Use !!!DOCSRTRING!!!
+num1 = input ('Enter a multiply value through a space: ')
+num2 = input ('Type the number for LC, random typing and no spaces: ')
+
+print ( 'The arithmetic means of typed digits are: ' + str(arithmetic(num1, num2)) )
+
+#2.1 Create a fucntion that would create the list of integers, determine 'max' and 'min'. Use !!!DOCSRTRING!!!
 
 def max(x, y):
 
@@ -38,11 +46,11 @@ time.sleep(1)
 
 print( max.__doc__) # docstring info will arise
 
-#3.1 Create a program that will count the surface area of a rectang, a triangle or a circle, according to customer's selection 
+#3.1 Create a program that will count the surface area of rectangular, traingle and cyrcle, according to customer's selection 
 # rectang
 
 def rectang():
-	a = int(input (' Enter the side length: '))
+	a = int(input (' Enter the side lenght: '))
 	b = int(input (' Enter the side width: '))
 	s = a * b
 	
@@ -87,7 +95,7 @@ else:
 	print ('The program is over')
 
 
-#4.1 Написати функцію, яка обчислює кількість символів, які входять в задану стрічку
+#4.1 Написати функцію, яка обчислює кількість символів, які входять в задану стрічку.	
 
 def num_symb (x):
 
