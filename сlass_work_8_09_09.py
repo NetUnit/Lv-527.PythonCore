@@ -1,4 +1,4 @@
-import pygame                                       # pygamemodule import
+import pygame                                       # pygame module import
 
 #class_work 8 'py_game'- SoftServe8 - Lesson8
 
@@ -6,7 +6,7 @@ import pygame                                       # pygamemodule import
 
 # block 1 - setup display and colour constants
 
-WHITE = (255, 255, 255)                             # cortage of data, default white colour according to the RGB format scale, https://prnt.sc/unbjtj                                                 
+WHITE = (255, 255, 255)                             # cortege of data, default white colour according to the RGB format scale, https://prnt.sc/unbjtj                                                 
 BLACK = (0, 0, 0)                                   # RGB format scale is an open source info like (w3schools).
 
 WIDTH_DISPLAY = 800                                 # better way to represent constants as variables, in this case the code is more understandable
@@ -54,7 +54,7 @@ player_image.set_colorkey(BLACK)
 done = False                                        # create condition of closing the main frmae∕display # loop until the user close clicks the close button
 
 
-#block2-block3 - action loop or exit - drawing curves
+#block2 - action loop or exit - drawing curves
 # ------------------------------ Main Program Loop ---------------------------
 
 while not done:                                     # while done != True (not done) or done == False or ('while done')
@@ -73,7 +73,7 @@ while not done:                                     # while done != True (not do
                                                     # when condition contradicts each other, it will end the loop. 'done = False' AS IN THE HEADING CONDITION
 
 
-    ### DOES NOT WORK ### SETUP EDGES
+    ### SETUP EDGES ### DOES NOT WORK
     keys=pygame.key.get_pressed()                   # за допомогою цього блоку ми зчитуємо які саме клавіші юзер натискає (вправо, вліво, вниз, вгору)
                                                     # змінна keys (яка є одночасно і функцією, зчитає те що наклікав юзер)
     
@@ -88,7 +88,7 @@ while not done:                                     # while done != True (not do
     ### БЛОК АНАЛІЗУ КООРДИНАТ КАРТИНКИ (НЕ ПРАЦЮЄ) 
 
 
-    #--- reading the movement that user is pressing ---
+    #-block3 - reading the movement that user is pressing -
 
     # Get the current mouse position. This returns the position
     # as a list of two numbers.
