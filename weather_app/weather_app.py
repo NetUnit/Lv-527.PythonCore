@@ -2,6 +2,7 @@ from tkinter import *
 from configparser import ConfigParser
 import requests
 import tkinter as tk
+import PIL
 from PIL import Image, ImageTk
 
 import pyowm.owm
@@ -98,8 +99,6 @@ def get_short_status(): # дочірній клас
 
     if weather:
         location_lbl['text'] = (f'Weather status: {weather[13]}. Precipitation: {weather[14]} ')
-        #image ['bitmap'] = 'images/{}.png'.format(weather[13])
-        #temp_lbl['text'] = '{:.2f}°C, {:.2f}°F'.format(weather[2], weather[3])
     else:
         error_lbl['text'] = (f'We could\'nt start your program. Please try starting it again')
 
@@ -109,10 +108,8 @@ def get_id_city():
         
     if weather:
         location_lbl['text'] = (f'City ID: {weather[7]}')
-        #image ['bitmap'] = 'images/{}.png'.format(weather[4])
-        #temp_lbl['text'] = '{:.2f}°C, {:.2f}°F'.format(weather[2], weather[3])
     else:
-        error_lbl['text'] = (f'We could\'nt start your program. Please try starting it again')
+        error_lbl['text'] = (f'We couldn\'t start your program. Please try starting it again')
 
 def get_weather_options(): 
     city = city_text.get()
@@ -122,10 +119,8 @@ def get_weather_options():
         location_lbl['text'] = (f'Clouds: {weather[13]}')
         temp_lbl['text'] = (f'Tmax {weather[2]} °C |  Tmin {weather[4]} °C | feels-like T {weather[3]} °C')
         weather_lbl['text']= (f'Wind: {weather[0]} m∕s | Humidity {weather[1]} %')
-        #image ['bitmap'] = 'images/{}.png'.format(weather[4])
     else:
         error_lbl['text'] = (f'We could\'nt start your program. Please try starting it again')
-
 
 def get_pressure(): 
     city = city_text.get()
@@ -133,8 +128,6 @@ def get_pressure():
         
     if pressure:	
         location_lbl['text'] = (f'{pressure[5]} bar∕mPa∕atm ')	
-        #image['bitmap'] = 'images/{}.png'
-        #temp_lbl['text'] = '{:.2f}°C, {:.2f}°F'.format(pressure[2], pressure[3])
     else:
         error_lbl['text'] = (f'We could\'nt start your program. Please try starting it again')
 
@@ -144,8 +137,6 @@ def get_coords():
 
     if coords:	
         location_lbl['text'] = (f'Lat: {coords[8]} Lon: {coords[9]}')	
-        #image['bitmap'] = 'images/{}.png'
-        #temp_lbl['text'] = '{:.2f}°C, {:.2f}°F'.format(coords[2], coords[3])
     else:
         error_lbl['text'] = (f'We could\'nt start your program. Please try starting it again')
 
@@ -155,8 +146,6 @@ def get_sunrise():
 
     if sunrise:	
         location_lbl['text'] = (f'Sunrise time: {sunrise[10]}s Sunset time: {sunrise[11]}s')	
-        #image['bitmap'] = 'images/{}.png'
-        #temp_lbl['text'] = '{:.2f}°C, {:.2f}°F'.format(sunrise[2], sunrise[3])
     else:
         error_lbl['text'] = (f'We could\'nt start your program. Please try starting it again')
 
@@ -198,8 +187,6 @@ def get_one_call():
             location2_lbl['text'] = (f'Feels like morning T: {tom_temp}°C.\n\
             Wind: {tom_wi} m∕s. \n\
             Humidity: {tom_hu} %')
-            #image['bitmap'] = 'images/{}.png'
-            #temp_lbl['text'] = '{:.2f}°C, {:.2f}°F'.format(coords[2], coords[3])
         else:
             error_lbl['text'] = (f'There may be not enough info now. Please try again later')
     except:
@@ -233,35 +220,35 @@ city_entry.pack() # pack function - place a button on the screen (pack() is a pl
 ###############################################################################################
 
 ###### Вивід статусу інформації відповідно до міста
-location_lbl = Label(app, text='Location', font=('bold', 15), bg='#a6aab0')
+location_lbl = Label(app, text='Location', font=('bold', 15), bg='#afb2b7')
 location_lbl.pack()
 
 # button#1 get_id
-search_btn = Button (app, text = 'Check ID', width=40, command=get_id_city)
+search_btn = Button (app, text = 'Check ID', width=40, bg='#f95a19', command=get_id_city)
 search_btn.pack() 
 
 # button#2 get_short_status
-search_btn7 = Button (app, text = 'Short Weather Status', width=40, command=get_short_status)
+search_btn7 = Button (app, text = 'Short Weather Status', bg='#f95a19', width=40, command=get_short_status)
 search_btn7.pack()
 
 # button#3 get_weather_options
-search_btn2 = Button (app, text = 'Detailed Weather Status', width=40, command=get_weather_options)
+search_btn2 = Button (app, text = 'Detailed Weather Status', bg='#f95a19', width=40, command=get_weather_options)
 search_btn2.pack() 
 
 # button#4 get_pressure
-search_btn3 = Button (app, text = 'Check Pressure', width=40, command=get_pressure)
+search_btn3 = Button (app, text = 'Check Pressure', width=40, bg='#f95a19', command=get_pressure)
 search_btn3.pack()
 
 # button#5 get_coords
-search_btn4 = Button (app, text = 'Check Coords', width=40, command=get_coords)
+search_btn4 = Button (app, text = 'Check Coords', width=40, bg='#f95a19', command=get_coords)
 search_btn4.pack()
 
 # button#6 get_sunrise_
-search_btn5 = Button (app, text = 'Check Sunrise∕Sunset Time', width=40, command=get_sunrise)
+search_btn5 = Button (app, text = 'Check Sunrise∕Sunset Time', bg='#f95a19', width=40, command=get_sunrise)
 search_btn5.pack()
 
 # button#7 get_rain
-search_btn6 = Button (app, text = 'Check Rain Amount', width=40, command=get_rain)
+search_btn6 = Button (app, text = 'Check Rain Amount', bg='#f95a19', width=40, command=get_rain)
 search_btn6.pack()
 
 ###### Статус програми
@@ -291,12 +278,12 @@ forecast_entry = Entry(app, width=43, textvariable=tom_forecast_city)
 forecast_entry.pack() # tomorrow mornings weather
 
 ####### прогноз стрічка
-location2_lbl = Label(app, text='Location', font=('bold', 15), bg='#a6aab0')
+location2_lbl = Label(app, text='Location', font=('bold', 15), bg='#afb2b7')
 location2_lbl.pack()
 
 ####### прогноз стрічка
 # button#8 forecast_for_tomorrow
-forecast_btn = Button (app, text = 'Tomorrow Forecast', width=40, command=get_one_call)
+forecast_btn = Button (app, text = 'Tomorrow Forecast', bg='#f95a19', width=40, command=get_one_call)
 forecast_btn.pack()
 
 ######################3
@@ -307,7 +294,7 @@ forecast_btn.pack()
 #root.geometry("550x300+300+150")
 #app.resizable(width=True, height=True)
 
-img  = Image.open("/home/netunit/Стільниця/Soft/Project_LV-527/weather_app/images/11d@2x.png") 
+img  = Image.open("/media/netunit/SSD.LI/SoftServe/GIT-LV-527/homework/Lv-527.PythonCore/weather_app/images/11d@2x.png") 
 photo=ImageTk.PhotoImage(img)
 #img = img.resize(100, 100, '11n@2x.png')
 lab_img=Label(image=photo).place(x=0,y=0)
