@@ -25,6 +25,7 @@
 '''
 
 
+# NON-RELEVANT WITH CODEWARS
 def solution(n):
     str_lst = []
 
@@ -252,6 +253,7 @@ n = input('Type the text U r going to check: ')
 print(solution(n))
 
 
+# RELEVANT WITH CODEWARS
 def solution(n):
 
     ints = (1000, 900,  500, 400, 100,  90,
