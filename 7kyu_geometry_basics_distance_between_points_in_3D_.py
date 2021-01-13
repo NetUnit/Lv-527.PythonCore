@@ -16,9 +16,9 @@ from math import sqrt
 # selecting data through space
 class Point:
     try:
-        a = [15, 10, 5];
-        b = [30, 40, 50];
-    
+        a = [15, 10, 5]
+        b = [30, 40, 50]
+
         def __init__(self, a=a, b=b):
             self.a = a
             self.b = b
@@ -34,10 +34,10 @@ class Point:
         try:
             p1 = list(map(float, a))
             p2 = list(map(float, b))
-                
+
             if len(p1) == len(p2) > 0:
                 arr = np.array([b, a])
-                calc = np.diff(arr, axis = 0)
+                calc = np.diff(arr, axis=0)
                 # return "The distance between two points is %.6f cm" % sqrt(sum(sum(calc)**2))
                 # return "The distance between two points is {0} cm".format(round(sqrt(sum(sum(calc)**2)), 5))
                 return f'The distance between two points is {round(sqrt(sum(sum(calc)**2)), 6)} cm'
@@ -45,6 +45,7 @@ class Point:
                 return -1
         except ValueError:
             return None
+
 
 a = list(map(int, input('Type the coords of the first point, through space: ').split()))
 b = list(map(int, input('Type the coords of the first point, through space: ').split()))
@@ -58,9 +59,11 @@ print(instance.distance_between_points(a, b))
 class Point:
 
     try:
-        a = list(map(int, input('Type the coords of the first point, through space: ').split()))
-        b = list(map(int, input('Type the coords of the first point, through space: ').split()))
-    
+        a = list(
+            map(int, input('Type the coords of the first point, through space: ').split()))
+        b = list(
+            map(int, input('Type the coords of the first point, through space: ').split()))
+
         def __init__(self, a=a, b=b):
             self.a = a
             self.b = b
@@ -76,10 +79,10 @@ class Point:
         try:
             p1 = list(map(float, self.a))
             p2 = list(map(float, self.b))
-                
+
             if len(p1) == len(p2) > 0:
                 arr = np.array([self.b, self.a])
-                calc = np.diff(arr, axis = 0)
+                calc = np.diff(arr, axis=0)
                 # return "The distance between two points is %.6f cm" % sqrt(sum(sum(calc)**2))
                 # return "The distance between two points is {0} cm".format(round(sqrt(sum(sum(calc)**2)), 5))
                 return f'The distance between two points is {round(sqrt(sum(sum(calc)**2)), 6)} cm'
@@ -87,7 +90,7 @@ class Point:
                 return -1
         except ValueError:
             return None
-            
+
 
 instance = Point()
 print(instance.distance_between_points())
@@ -101,10 +104,7 @@ def distance_between_points(a, b):
     for a, b in zipped_list:
         a = [(a - b)**2]
         lst += a
-            
+
         # return f'{round(sqrt(sum(lst)), 6)}'
         # return "{0}".format(sqrt(sum(lst)))
         return "%.6f" % sqrt(sum(lst))
-
-
-
