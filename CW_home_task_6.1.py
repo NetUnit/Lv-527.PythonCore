@@ -15,10 +15,12 @@ def distance(x1, y1, x2, y2):
     distance = ((x2 - x1)**2 + (y2 - y1)**2) ** (1/2)
     return round(distance, 2)
 
+
 # RELEVANT WITH CODEWARS
-# https://prnt.sc/uhoxmn
+#  https://prnt.sc/uhoxmn
 
 # 1.2 Return the distance between the 2 points (3 coords). (SIMILAR KATA with N-points)
+
 
 
 '''
@@ -45,10 +47,9 @@ def distance(x1, y1, x2, y2):
 
             np.array(p1).astype(int) # only for the regular digits > 0, 
             in the case of irregular digits - astype(int) should be removed
-
 '''
 
-
+'''
 # var1 - using zip+lc+formula
 def dist(p1, p2):
     if len(p1) == len(p2):
@@ -155,7 +156,7 @@ def distance(p1, p2):
 p1 = list(
     map(int, input('Type the coords of the first point, through space: ').split()))
 p2 = list(
-    map(int, input('Type the stcoords of the first point, through space: ').split()))
+   map(int, input('Type the stcoords of the first point, through space: ').split()))
 print(dist(p1, p2))
 
 
@@ -181,3 +182,35 @@ p1 = list(
 p2 = list(
     map(int, input('Type the stcoords of the first point, through space: ').split()))
 print(distance_between_points(p1, p2))
+'''
+
+# var7 using 2 different Classes
+class Point:
+
+    def __init__(self, x=0, y=0, z=0):
+        self.x = x
+        self.y = y
+        self.z = z
+    
+    def __str__(self):
+        return '%d, %d, %d' % (self.x, self.y, self.z) # без str - c не роздрукується
+    
+    def __add__(self, other):
+        x = (self.x - other.x)**2
+        y = (self.y - other.y)**2
+        z = (self.z - other.z)**2
+        return Point(x, y, z)
+
+
+a = Point(100, 100, 20)
+b = Point(2, 4, 6)
+
+
+class Calculation():
+    def distance_between_points(self, c):
+        return 'The distance between two points is: %.5f cm' % sqrt(c.x + c.y + c.z)
+
+
+c = a + b
+instance = Calculation()
+print(instance.distance_between_points(c))
