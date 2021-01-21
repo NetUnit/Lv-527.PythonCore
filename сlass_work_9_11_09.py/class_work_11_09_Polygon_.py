@@ -194,8 +194,8 @@ class Launch(Polygon):
     try:
         print(instance.set_coords())
         # беремо значення з класу для порівння - як об'кт в памяті, але кторий не викликається
-        if instance.set_coords == instance.error1.upper():
-            instance.calculation()
+        if instance.set_coords != instance.error1.upper():
+            print(instance.calculation())
         else:
             pass
 
