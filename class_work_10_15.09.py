@@ -41,7 +41,7 @@ except ZeroDivisionError as err:
 	information entered. 
 
 	Switched separately when user is typing the negative
-	Value.
+	Value - raising the error and catch it.
 '''
 
 
