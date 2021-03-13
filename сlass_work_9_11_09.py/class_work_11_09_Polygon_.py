@@ -13,14 +13,9 @@ import time
 
     To measure te square we should,
     setup coords and use math:
-    square = ((x1y2 + x2y3 + x3y1) - x2y1 - x3y2 - x1y3) * 0.5
-    for in range len(lst):
-
-    square = |((x1y2 + x(n+1)y(n+1) + x(n)y1 - x2y1 - x(n+1)y(n+1) - x1y(n)) * 0.5| - modulo
-
-    var3 - we select the figure, pyhon call the specific function
+    square = |((x1y2 + x2y3 + x3y1) - (x2y1 - x3y2 - x1y3) * 0.5| -  modulo
 '''
-
+    
 
 # var1 - we are selecting coords and algorithm will detect the figure
 class Polygon():
